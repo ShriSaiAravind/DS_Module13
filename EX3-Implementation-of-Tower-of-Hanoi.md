@@ -1,26 +1,46 @@
-# EX3 Implementation of Tower of Hanoi
-## DATE:
+# Ex 1C Implementation of Tower of Hanoi
+## DATE: 05/03/2025
 ## AIM:
 To write a C program to implement Tower of Hanoi
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Start the program.
+2. Include the required libraries.
+3. Define a recursive function to handle the tower of hanoi problem.
+4. Call the defined function in the main function and print the moves.
+5. End the program.
 
 ## Program:
 ```
 /*
 Program to implement Tower of Hanoi
-Developed by: 
-RegisterNumber:  
+Developed by: Shri Sai Aravind. R
+RegisterNumber: 212223040197
 */
+
+#include<stdio.h>
+void TOH(int n,char x,char y,char z)
+{
+    if(n==1)
+    {
+        printf("%c to %c\n",x,y);
+        return;
+    }
+    TOH(n-1,x,z,y);
+    printf("%c to %c\n",x,y);
+    TOH(n-1,z,y,x);
+    
+}
+int main()
+{
+   int n=4;
+   TOH(n,'A','B','C');
+}
 ```
 
-## Output:
+## Output
 
+![capture_temp](https://github.com/user-attachments/assets/8b61fb97-eec9-48e5-b523-6c19bc5eb43a)
 
 
 ## Result:
