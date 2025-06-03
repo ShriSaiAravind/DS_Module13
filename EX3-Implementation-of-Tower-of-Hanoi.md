@@ -1,5 +1,5 @@
 # Ex 1C Implementation of Tower of Hanoi
-## DATE: 05/03/2025
+## DATE: 06/02/2025
 ## AIM:
 To write a C program to implement Tower of Hanoi
 
